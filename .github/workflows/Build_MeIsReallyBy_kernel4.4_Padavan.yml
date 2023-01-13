@@ -43,7 +43,7 @@ on:
       firmwarever:
         description: 'firmware''s version'
         required: true
-        default: '20221026'
+        default: '20230113'
       uploadwet:
         type: boolean
         description: 'upload firmware to wetransfer'
