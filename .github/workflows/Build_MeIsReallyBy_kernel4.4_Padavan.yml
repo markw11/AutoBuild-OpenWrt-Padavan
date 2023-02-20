@@ -93,8 +93,8 @@ jobs:
         
     - name: modify code
       run: |
-        mv LuBan/*.patch /opt/rt-n56u/  
-        cd /opt/rt-n56u
+        mv LuBan/*.patch $WORK_PATH  
+        cd $WORK_PATH
         git apply xmc.patch
         git apply luban.patch
         
