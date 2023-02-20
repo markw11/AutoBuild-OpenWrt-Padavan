@@ -95,6 +95,7 @@ jobs:
       run: |
         mv LuBan/*.patch $WORK_PATH  
         cd $WORK_PATH
+        git apply main...hanwckf_padavan-4.4_main.patch
         git apply xmc.patch
         git apply luban.patch
         
