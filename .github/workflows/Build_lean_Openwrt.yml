@@ -24,6 +24,7 @@ on:
           - 'G-Dock'
           - 'G-Dock-Lite'
           - 'K2P'
+          - 'JDcloud_luban'
       UPLOAD_BIN_DIR:
         type: boolean
         description: '上传bin文件夹'
