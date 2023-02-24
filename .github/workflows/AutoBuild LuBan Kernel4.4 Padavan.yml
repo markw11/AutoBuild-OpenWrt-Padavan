@@ -42,7 +42,7 @@ on:
         default: 'false'
 
 env:
-  REPOSITORY_URL: https://github.com/lu-1991/padavan-4.4.git
+  REPOSITORY_URL: https://github.com/lu-1991/padavan-4.4-luban.git
   TOOLCHAIN_URL: https://github.com/hanwckf/padavan-toolchain/releases/download/linux-4.4-v1.0/mipsel-linux-uclibc.tar.xz
   WORK_PATH: /opt/padavan-4.4
   TIME_ZONE: Asia/Shanghai
