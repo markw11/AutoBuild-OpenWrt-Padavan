@@ -25,10 +25,10 @@ jobs:
     - name: Clone source code
       run: |
         git clone https://github.com/MeIsReallyBa/padavan-4.4.git $WORK_PATH
-        mv -f CN.dict /opt/rt-n56u/trunk/user/www/dict/CN.dict
-        mv -f asus_logo.png /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed/asus_logo.png
-        mv -f defaults.h /opt/rt-n56u/trunk/user/shared/defaults.h
-        mv -f Makefile /opt/rt-n56u/trunk/user/www/Makefile        
+        mv -f CN.dict $WORK_PATH/trunk/user/www/dict/CN.dict
+        mv -f asus_logo.png $WORK_PATH/trunk/user/www/n56u_ribbon_fixed/asus_logo.png
+        mv -f defaults.h $WORK_PATH/trunk/user/shared/defaults.h
+        mv -f Makefile $WORK_PATH/trunk/user/www/Makefile        
     - name: modify code
       run: |
         mv LuBan/*.patch $WORK_PATH/  
