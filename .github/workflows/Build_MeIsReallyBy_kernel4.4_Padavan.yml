@@ -44,7 +44,7 @@ on:
       firmwarever:
         description: 'firmware''s version'
         required: true
-        default: '20230220'
+        default: '20230323'
       uploadwet:
         type: boolean
         description: 'upload firmware to wetransfer'
@@ -90,14 +90,6 @@ jobs:
         mkdir -p toolchain-4.4.x
         wget $TOOLCHAIN_URL
         tar -xf mipsel-linux-uclibc.tar.xz -C toolchain-4.4.x
-        
-    - name: modify code
-      run: |
-        mv LuBan/*.patch $WORK_PATH  
-        cd $WORK_PATH
-        git apply main...hanwckf_padavan-4.4_main.patch
-        git apply xmc.patch
-        git apply luban.patch
         
     - name: Parse json string of include plugins
       run: | 
