@@ -24,7 +24,6 @@ on:
           - 'G-Dock'
           - 'G-Dock-Lite'
           - 'K2P'
-          - 'JDcloud_luban'
           - 'JDCloud_BaiLi'
       UPLOAD_BIN_DIR:
         type: boolean
@@ -119,12 +118,6 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-
-    - name: Add LuBan suport
-      run: |
-        mv $GITHUB_WORKSPACE/coolsnowwolf-lede-luban.patch openwrt
-        cd openwrt
-        git apply coolsnowwolf-lede-luban.patch
         
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
