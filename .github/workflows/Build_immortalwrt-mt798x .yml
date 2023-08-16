@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 # Modified for lean/openwrt
 
-name: Build_immortalwrt
+name: Build_immortalwrt for JDCloud_AX6000
 
 on:
   repository_dispatch:
